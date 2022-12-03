@@ -1,0 +1,79 @@
+<html class="devise-layout-html">
+    <link rel="stylesheet" type="text/css" href="css/login-gitlab/style.css">
+    </head>
+    <body class="login-page application navless ui-indigo gl-browser-chrome gl-platform-windows" data-page="sessions:new" data-qa-selector="login_page">
+        <div class="page-wrap borderless">
+        <div class="login-page-broadcast">
+        </div>
+        <div class="container navless-container">
+            <div class="content">
+                <div class="flash-container flash-container-page sticky" data-qa-selector="flash_container"></div>
+                <div class="mt-3">
+                    <div class="col-sm-12 gl-text-center">
+                        <img alt="GitLab.com" class="gl-w-10 lazy" src="https://gitlab.com/assets/logo-911de323fa0def29aaf817fca33916653fc92f3ff31647ac41d2c39bbe243edb.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                        <h1 class="mb-3 gl-font-size-h2">
+                            GitLab.com
+                        </h1>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="gl-w-half gl-xs-w-full gl-ml-auto gl-mr-auto bar">
+                        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJXWQL"
+                            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                        <div id="signin-container">
+                            <div class="tab-content">
+                                <div class="login-box tab-pane active" id="login-pane" role="tabpanel">
+                                    <div class="login-body">
+                                        <form class="new_user gl-show-field-errors js-arkose-labs-form" id="new_user" aria-live="assertive" data-testid="sign-in-form" action>
+                                            <input type="hidden" name="authenticity_token" value="q+JUI1ftdrqjtMizJXOKSDsvpVqnM/0u/zQwZoIrpLhw3xReyMpCOoQDG6XovUE3daOhVR1PAXsqA9R0x/BzAQ==" autocomplete="off" />
+                                            <div class="form-group gl-px-5 gl-pt-5">
+                                                <label for="user_login" class="label-bold gl-mb-1">Username or email</label>
+                                                <input class="form-control gl-form-input top js-username-field" autofocus="autofocus" autocapitalize="off" autocorrect="off" required="required" title="This field is required." data-qa-selector="login_field" data-testid="username-field" type="text" name="user[login]" id="user_login" />
+                                            </div>
+                                            <div class="form-group gl-px-5">
+                                                <label class="label-bold gl-mb-1" for="user_password">Password</label>
+                                                <input class="form-control gl-form-input bottom" autocomplete="current-password" required="required" title="This field is required." data-qa-selector="password_field" data-testid="password-field" type="password" name="user[password]" id="user_password" />
+                                            </div>
+                                            <div class="gl-px-5">
+                                                <div class="gl-display-inline-block">
+                                                    <div class="gl-form-checkbox custom-control custom-checkbox">
+                                                        <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="custom-control-input" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+                                                        <label class="custom-control-label" for="user_remember_me"><span>Remember me</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="gl-float-right">
+                                                    <a href="">Forgot your password?</a>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                            <div data-api-key="12D76D4C-5EDF-4EB4-A84D-042C497A9610" data-domain="gitlab-api.arkoselabs.com" id="js-arkose-labs-challenge"></div>
+                                            <div class="submit-container move-submit-down gl-px-5">
+                                                <button name="button" type="submit" class="gl-button btn btn-block btn-confirm js-sign-in-button js-no-auto-disable" data-qa-selector="sign_in_button" data-testid="sign-in-button">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="gl-px-5">
+                                By signing in you accept the <a href='/-/users/terms' target='_blank' rel='noreferrer noopener'>Terms of Use and acknowledge the Privacy Policy and Cookie Policy</a>.
+                            </p>
+                            <p class="gl-mt-3 gl-text-center">
+                                Don&#39;t have an account yet?
+                                <a data-qa-selector="register_link" href="">Register now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-fixed">
+            <div class="container footer-container">
+                <div class="footer-links">
+                    <a href="">Explore</a>
+                    <a href="">Help</a>
+                    <a href="">About GitLab</a>
+                    <a target="_blank" class="text-nowrap" rel="noopener noreferrer" href="">Community forum</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

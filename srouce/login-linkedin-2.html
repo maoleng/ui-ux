@@ -1,0 +1,33 @@
+<html class="os-win device-desktop" lang="">
+    <head>
+        <title>Authorize | LinkedIn</title>
+        <link rel="stylesheet" href="css/login-linkedin/style2.css"/>
+    </head>
+    <body data-controller="authorize"  >
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="header__logo">LinkedIn</h1>
+            </div>
+            <div class="canvas">
+                <div class="profiles"><span class="profiles__user-wrapper"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFDLiH61YYrpA/profile-displayphoto-shrink_200_200/0/1642705456868?e=1674691200&amp;v=beta&amp;t=Vcm7l439__f6y0j6y6n_Oz2jHN-4oReb5C8F7P28Z48" class="profiles__user" alt="Bùi Hữu Lộc" width="104" height="104"/></span><img alt="application.name" class="profiles__app" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/a0/b2/78/cappuccino.jpg" width="200" height="200"/></div>
+                <div class="card">
+                    <h2 class="card__title"><strong>The Coffe</strong> would like to:</h2>
+                    <section>
+                        <ul class="card__items">
+                            <li class="card__item">Use your name and photo</li>
+                            <li class="card__item">Use the primary email address associated with your LinkedIn account</li>
+                        </ul>
+                        <p class="card__terms">You can stop this sync in your LinkedIn <a href="" class="card__settings-link" target="">settings</a>.&nbsp;The Coffe <a href="https://The Coffe.dev" class="card__third-party-privacy-link" target="">terms</a> apply.&nbsp;<a href="" target="_blank">Learn more</a>.</p>
+                    </section>
+                    <div class="links">
+                        <form method="post" action="" class="links__logout-form"><input type="hidden" name="csrfToken" value="ajax:9108834566142438771"/><button type="submit" class="links__logout">Not you?</button></form>
+                    </div>
+                </div>
+                <form id="oauth__auth-form" method="post" action="" class="actions"data-redirect="false"><input type="hidden" name="csrfToken" value="ajax:9108834566142438771"/><a id="oauth__auth-form__cancel-btn" href="" tabindex="0" class="actions__cancel" role="button">Cancel</a><button id="oauth__auth-form__submit-btn" type="submit" name="action" value="authorize"class="actions__allow">Allow</button></form>
+                <div class="redirect-domain" id="oauth__auth-form__redirect-domain-url">You will be redirected to <strong>thecoffe.dev</strong></div>
+                <footer class="footer"><a class="footer__privacy-policy" target="" href="">Privacy Policy</a><a class="footer__user-agreement" target="" href="">User Agreement</a></footer>
+            </div>
+        </div>
+
+    </body>
+</html>

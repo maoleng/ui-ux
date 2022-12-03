@@ -1,0 +1,284 @@
+<head id="j_idt2">
+  <style type="text/css">
+    .container-fluid {
+      width: 40% !important;
+      min-width: 750px !important;
+    }
+
+    .info-box {
+      min-height: 600px;
+    }
+  </style>
+</head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="j_idt6">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" />
+    <link rel="stylesheet" href="css/payment/momo.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style type="text/css">
+      .container-fluid {
+        width: 40% !important;
+        min-width: 750px !important;
+      }
+
+      .info-box {
+        min-height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spinner" id="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="page" style="display: none;">
+      <nav class="navbar navbar-default hidden-xs">
+        
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 left hidden-xs">
+            <div class="info-box">
+              <div class="expiredAt" style="position: relative; padding-bottom: 20px; color: white">
+                <h3 style="color: #e8e8e8;">Đơn hàng hết hạn sau</h3>
+                <span style="font-size: 1.7rem;">10:00</span>
+              </div>
+              <div class="receipt"> Nhà cung cấp <br />
+                <span style="padding-left: 25px;">The Coffe</span>
+              </div>
+              <div class="entry">
+                <p>
+                  <i class="fa fa-money" aria-hidden="true" style=""></i>
+                  <span style="padding-left: 5px;">Số tiền</span>
+                  <br />
+                  <span style="padding-left: 25px;">240.900đ</span>
+                </p>
+              </div>
+              <div class="entry">
+                <p>
+                  <i class="fa fa-credit-card" aria-hidden="true" style=""></i>
+                  <span style="padding-left: 5px;">Thông tin</span>
+                  <br />
+                  <span style="padding-left: 25px;word-break: keep-all;">Thanh toan don hang ca phe sua</span>
+                </p>
+              </div>
+              <div class="entry">
+                <p>
+                  <i class="fa fa-barcode" aria-hidden="true" style=""></i>
+                  <span style="padding-left: 5px;">Đơn hàng</span>
+                  <br />
+                  <span style="padding-left: 25px;word-break: break-all;">1669393658_EZAB5897C2</span>
+                </p>
+              </div>
+              <div class="entry" style="width: 100%;text-align: center;position: absolute;bottom: 0; left: 0;">
+                <a href="checkout.html" style="color: #e8e8e8;font-weight: 200;">
+                  <i class="fa fa-arrow-left" aria-hidden="true" style=""></i>
+                  <span>Quay lại</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 right">
+            <div class="content">
+              <div class="header">
+                <a href="https://cdn.mservice.io/static/gcs_partner_m4b/d249a-2020-03-24/AOMaRPEsjQ7f1vRgQ99r_1585043547384" style="">
+                  <img class="lazy logo-image-size" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/a0/b2/78/cappuccino.jpg" height="80px" style="max-width: 200px" alt="logo-momo" />
+                  <noscript>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/a0/b2/78/cappuccino.jpg" width="80px" alt="logo-momo" />
+                  </noscript>
+                </a>
+                <a href="https://momo.vn" style="float: right">
+                  <img class="logo-image-size" src="https://payment.momo.vn/gw_payment/faces/javax.faces.resource/material/img/logo-1.png" width="80px" alt="logo-momo" />
+                </a>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="message" id="loginForm">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="scan-qr-code">
+                          <h2>Quét mã để thanh toán</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="qr-code">
+                          <img class="image-qr-code" src="https://payment.momo.vn/gw_payment/qrcode/image/receipt?key=685512616711f42cac15a776c77f4ff49dd18613" alt="paymentcode" />
+                          <p class="hidden-md"> Mã QR hết hạn sau: <b name="expiredAt" style="font-size: 1rem;"></b>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="info-qr-code">
+                          <p>
+                            <img width="25" src="https://payment.momo.vn/gw_payment/faces/javax.faces.resource/material/img/qr-code-1.png" alt="" /> Sử dụng App <b>MoMo</b> hoặc <br /> ứng dụng Camera hỗ trợ QR code để quét mã.
+                          </p>
+                          <p class="hidden-xs">
+                            <i class="fa fa-spinner fa-spin"></i> Đang chờ bạn quét ...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--                            &lt;div class="row" style="padding-bottom: 0px;padding-top: 25px;"&gt;-->
+                    <!--                                &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;-->
+                    <!--                                    &lt;div class="login_sign_enter"&gt;-->
+                    <!--                                        &lt;span class="enter_line_or"&gt;Ho&#7863;c&lt;/span&gt;-->
+                    <!--                                        &lt;p style="font-size: 11pt;"&gt;-->
+                    <!--                                            &#272;&#259;ng k&yacute; t&agrave;i kho&#7843;n MoMo v&agrave; thanh to&aacute;n l&#7847;n &#273;&#7847;u-->
+                    <!--                                            &lt;c:choose&gt;-->
+                    <!--                                            &lt;c:when test="false"&gt;-->
+                    <!--                                            ho&#7863;c-->
+                    <!--                                            &lt;a id="login" href="https://payment.momo.vn/gw_payment/payment/login?partnerCode=MOMO4TON20200206&amp;accessKey=UjxFJptTwj0Ueobm&amp;requestId=1669393658&amp;amount=240900&amp;orderId=1669393658_EZAB5897C2&amp;signature=578dac4a1584c1a5520a9094437a9a09f3dbd34fc3c79382b3c3213aa64de91d&amp;requestType=captureMoMoWallet" style="font-weight:500; text-decoration: underline"&gt;-->
+                    <!--                                                &#273;&#259;ng nh&#7853;p-->
+                    <!--                                            &lt;/a&gt;-->
+                    <!--                                            &lt;/c:when&gt;-->
+                    <!--                                            &lt;/c:choose&gt;-->
+                    <!--                                        &lt;/p&gt;-->
+                    <!--                                        &lt;p&gt;-->
+                    <!--                                            &lt;a id="signUp" href="https://payment.momo.vn/gw_payment/signup?partnerCode=MOMO4TON20200206&amp;accessKey=UjxFJptTwj0Ueobm&amp;requestId=1669393658&amp;amount=240900&amp;orderId=1669393658_EZAB5897C2&amp;signature=578dac4a1584c1a5520a9094437a9a09f3dbd34fc3c79382b3c3213aa64de91d&amp;requestType=captureMoMoWallet"-->
+                    <!--                                               style="font-weight:500" class="btn btn-momo-white"&gt;&#272;&#258;NG K&Yacute; NGAY.&lt;/a&gt;-->
+                    <!--                                        &lt;/p&gt;-->
+                    <!--                                    &lt;/div&gt;-->
+                    <!--                                &lt;/div&gt;-->
+                    <!--                            &lt;/div&gt;-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="row info-box-ipad hidden-md">
+              <div class="col-xs-4 col-sm-4 col-md-4 info-box-border">
+                <div style="word-break: break-all;">
+                  <i class="fa fa-credit-card" aria-hidden="true" style=""></i>
+                  <h5 style="padding-left: 5px;">Thông tin</h5>
+                  <span style="white-space: pre-wrap;">[PA-648279] Thanh toan don hang: EZAB5897C2</span>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 info-box-border">
+                <i class="fa fa-credit-card" aria-hidden="true" style=""></i>
+                <h5 style="padding-left: 5px;">Số tiền</h5>
+                <b>240.900đ</b>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 nowrap">
+                <div style="word-break: break-all;">
+                  <i class="fa fa-barcode" aria-hidden="true" style=""></i>
+                  <h5 style="padding-left: 5px;">Mã giao dịch</h5>
+                  <span style="white-space: pre-wrap;">1669393658_EZAB5897C2</span>
+                </div>
+              </div>
+              <div class="back-merchant">
+                <a href="checkout.html" style="color: #e8e8e8;font-weight: 200;cursor: pointer;" id="cancelOrderT">
+                  <i class="fa fa-arrow-left" aria-hidden="true" style=""></i>
+                  <span>Quay lại</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid hidden-xs">
+        
+      </div>
+      <div class="container hidden-md">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <div class="row-pci footer-pci" style="">
+              <a href="https://momo.vn" style="text-align: right;">
+                <img src="https://payment.momo.vn/gw_payment/faces/javax.faces.resource/material/img/pci.png" class="logo-pci" alt="pci" style="padding-top: 5%;   " />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#page').show();
+        $('#spinner').hide();
+        $("img.lazy").show().lazyload();
+      });
+      var retry = parseInt(300.0);
+      let isUseWindowOpenPartner = false;
+      var offset = 599776;
+      var second = offset / 1000;
+      var countdown = parseInt(second);
+      var timeoutInterval = setInterval(function() {
+        if (countdown > 0) {
+          var m = parseInt(second / 60);
+          var s = parseInt(second - m * 60);
+          second--;
+          countdown--;
+          if (m < 10) {
+            m = "0" + m;
+          }
+          if (s < 10) {
+            s = "0" + s;
+          }
+          $("span[name=expiredAt]").html(m + ":" + s);
+          $("b[name=expiredAt]").html(m + ":" + s);
+        };
+      }, 1000);
+
+      function redirect(data) {
+        if (isUseWindowOpenPartner) {
+          window.open(data.return_url);
+          window.location.reload();
+        } else {
+          if (data.return_url) {
+            window.location.replace(data.return_url);
+          } else if (data.returnUrl) {
+            window.location.replace(data.returnUrl);
+          }
+        }
+      }
+
+      function executeXML() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            // Typical action to be performed when the document is ready:
+            var data = JSON.parse(xhttp.responseText);
+            if (data.status_code >= 0) {
+              redirect(data);
+            } else {
+              if (retry > 0) setTimeout(executeXML, 2000);
+              retry--;
+            }
+          }
+        };
+        xhttp.open("POST", 'https://payment.momo.vnhttps://payment.momo.vn/gw_payment//qr/query?partnerCode=MOMO4TON20200206&accessKey=UjxFJptTwj0Ueobm&requestId=1669393658&orderId=1669393658_EZAB5897C2&orderInfo=%5BPA-648279%5D+Thanh+toan+don+hang%3A+EZAB5897C2&amount=240900&signature=578dac4a1584c1a5520a9094437a9a09f3dbd34fc3c79382b3c3213aa64de91d&requestType=captureMoMoWallet&payType=app-in-app' + '&_=' + new Date().getTime(), true);
+        xhttp.send();
+      }
+      $(document).ready(function() {
+        $.ajaxSetup({
+          cache: false
+        });
+        setTimeout(executeXML, 2000);
+      });
+      $("#signUp").click(function(e) {
+        fbTrack(EV.CLICK_SIGN_UP_ON_QR_PAGE, pCode, requestId);
+      });
+      $("#cancelOrder").click(function(e) {
+        fbTrack(EV.CANCEL_ORDER_ON_QR_PAGE, pCode, requestId);
+      });
+      $("#login").click(function(e) {
+        fbTrack(EV.CLICK_LOGIN_ON_QR_PAGE, pCode, requestId);
+      });
+      window.addEventListener("beforeunload", function(e) {
+        try {
+          fbTrack(EV.CLICK_CLOSE_BROWSER_QR_PAGE, pCode, requestId);
+        } catch (e) {
+          console.log(e);
+        } //Webkit, Safari, Chrome
+      });
+    </script>
+  </body>
+</html>
